@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Index View CSHTML Page</h1>
+        <p>
+            <!-- <a href="/login">Click to login here.</a> -->
+            <a href="@Url.RouteUrl("login")">Click to login here.</a>
+        </p>
+        <p>
+            @Html.RouteLink("Click Here ", "login") to login!
+        </p>
+    </div>
+</body>
+</html>
